@@ -5,6 +5,9 @@ import allure
 
 class RegistrationPage:
 
+    def __init__(self):
+        self.subjects_input = browser.element('#subjectsInput')
+
     @allure.step('Open practice-form')
     def open(self):
         browser.open("automation-practice-form")
@@ -39,8 +42,8 @@ class RegistrationPage:
 
     @allure.step('Fill subjects {value1}, {value2}')
     def fill_subjects(self, value1, value2):
-        browser.element('#subjectsInput').should(be.blank).type(value1).press_enter()
-        browser.element('#subjectsInput').type(value2)
+        self.subjects_input.should(be.blank).type(value1).press_enter()
+        self.subjects_input.type(value2)
         browser.element('#react-select-2-option-0').click()
 
     @allure.step('Choose hobbies {args}')

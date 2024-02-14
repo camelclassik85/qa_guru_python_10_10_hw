@@ -3,9 +3,9 @@ import allure
 from allure_commons.types import Severity
 
 
-@allure.tag('DemoQA')
+@allure.tag('qa_guru_python_10_10_hw')
 @allure.severity(Severity.CRITICAL)
-@allure.label('AD', 'qa_guru_python_10')
+@allure.label('Owner', 'AD')
 @allure.feature('Student Registration Form')
 @allure.story('Filling registration form')
 def test_fill_registration_form():
