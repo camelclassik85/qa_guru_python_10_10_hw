@@ -112,7 +112,7 @@ class RegistrationPage:
                 user.email,
                 user.gender,
                 user.phone_number,
-                f'{user.birth_day} {date.strftime('%B')},{user.birth_year}',
+                f"{user.birth_day} {date.strftime('%B')},{user.birth_year}",
                 ', '.join(user.subjects),
                 ', '.join(user.hobbies),
                 user.picture,
