@@ -47,8 +47,10 @@ class RegistrationPage:
     def fill_date_of_birth(self, user: User):
         browser.element('#dateOfBirthInput').click()
         browser.element('.react-datepicker__year-select').click()
-        browser.element(f'[value="{user.birth_year}"]').perform(command.js.scroll_into_view).click()
-        browser.element('.react-datepicker__month-select').click().element(f'[value="{user.birth_month - 1}"]').click()
+        browser.element(f'[value="{user.birth_year}"]').perform(
+            command.js.scroll_into_view).click()
+        browser.element('.react-datepicker__month-select').click().element(
+            f'[value="{user.birth_month - 1}"]').click()
         browser.element(f'.react-datepicker__day--0{user.birth_day}').click()
 
     @allure.step('Fill subjects')
@@ -63,7 +65,8 @@ class RegistrationPage:
     def choose_hobbies(self, user: User):
         browser.element('[for=hobbies-checkbox-2]').perform(command.js.scroll_into_view)
         for hobby in user.hobbies:
-            browser.all('[for^=hobbies-checkbox]').element_by(have.exact_text(hobby)).click()
+            browser.all('[for^=hobbies-checkbox]').element_by(
+                have.exact_text(hobby)).click()
 
     @allure.step('Upload picture')
     def upload_picture(self, user: User):
@@ -76,12 +79,14 @@ class RegistrationPage:
     @allure.step('Fill state')
     def fill_state(self, user: User):
         browser.element('#state').click()
-        browser.all("[id^='react-select-3-option']").element_by(have.exact_text(user.state)).click()
+        browser.all("[id^='react-select-3-option']").element_by(
+            have.exact_text(user.state)).click()
 
     @allure.step('Fill city')
     def fill_city(self, user: User):
         browser.element('#city').click()
-        browser.all("[id^='react-select-4-option']").element_by(have.exact_text(user.city)).click()
+        browser.all("[id^='react-select-4-option']").element_by(
+            have.exact_text(user.city)).click()
 
     @allure.step('Submit')
     def click_submit_button(self):
