@@ -2,7 +2,7 @@ import pytest
 from selene import browser
 
 
-@pytest.fixture(scope="function", autouse=True)
+@pytest.fixture(autouse=True)
 def browser_config():
     browser.config.base_url = 'https://demoqa.com/'
     browser.config.window_height = 1080
