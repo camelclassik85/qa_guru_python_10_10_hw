@@ -13,15 +13,15 @@
 
 ### Часть 2 branch high-level-step-objects
 
-[high-level-step-objects]()
+[high-level-step-objects](https://github.com/camelclassik85/qa_guru_python_10_10_hw/tree/high-level-step-objects)
 
 В этой части мы рассматриваем как ценный c точки зрения бизнеса шаг пользователя – «отправить форму с данными» или другими словами «провести регистрацию через форму». Также шагом считаем подтверждение результата проделанной работы (как например, подтверждение, что регистрация прошла успешно).
 
 Также в этой части следует провести рефакторинг работы с данными пользователя, представив их в виде объекта датакласса
 
-### Часть 3 branch application-manager
+### Часть 3 branch application-manager (пока в разработке)
 
-[branch application-manager]()
+[branch application-manager](https://github.com/camelclassik85/qa_guru_python_10_10_hw/tree/application-manager)
 
 * добавить в проект тест на упрощенную регистрацию через форму https://demoqa.com/text-box  и соответствующий PageObject. 
 
