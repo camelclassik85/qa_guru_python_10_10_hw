@@ -19,7 +19,7 @@
 
 Также в этой части следует провести рефакторинг работы с данными пользователя, представив их в виде объекта датакласса
 
-### Часть 3 branch application-manager (пока в разработке)
+### Часть 3 branch application-manager
 
 [branch application-manager](https://github.com/camelclassik85/qa_guru_python_10_10_hw/tree/application-manager)
 
