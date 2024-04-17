@@ -21,7 +21,7 @@
 
 ### Часть 3 branch application-manager
 
-[branch application-manager](https://github.com/camelclassik85/qa_guru_python_10_10_hw/tree/application-manager)
+[branch application-manager](https://github.com/camelclassik85/qa_guru_python_10_10_hw/blob/high-level-step-objects)
 
 * добавить в проект тест на упрощенную регистрацию через форму https://demoqa.com/text-box  и соответствующий PageObject. 
 
